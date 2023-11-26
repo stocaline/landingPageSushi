@@ -1,0 +1,48 @@
+.services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.services-container {
+    max-width: 1100px;
+    margin: 0 50px;
+}
+
+.services-container h4 {
+    color: var(--red);
+}
+
+.services-container p {
+    text-align: center;
+}
+
+.services-container ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.services-container ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-container ul li .icon{
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--red);
+    border-radius: 100%;
+    padding: 20px
+}
+
+.services-container ul li .icon i{
+    color: var(--red);
+    scale: 2;
+}

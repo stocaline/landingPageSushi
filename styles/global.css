@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url(header.css);
+@import url(main.css);
+@import url(services.css);
+@import url(about.css);
+@import url(footer.css);
+
+:root{
+    --red: #d63a25;
+    --bg-color: #fff;
+    --dark: #1e1c2a;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    color: var(--dark);
+    background: var(--bg-color);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #fc4c35;
+}
+
+.btn {
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--bg-color);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background-color: #fc4c35;
+}
+
+.btn i{
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+@media (max-width: 960px) {
+    .services-container ul {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .menu.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--bg-color);
+        gap: -10px;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+}
+
+@media (max-width: 785px) {
+    .home{
+        margin-top: 20px;
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+        height: 120vh;
+    }
+    .home .text-h4{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home-img{
+        width: 90%;
+    }
+
+    .about-container {
+        margin-top: 20px;
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+        height: 120vh;
+    }
+
+    .about .text-h4{
+        font-size: 15px;
+    }
+
+    .about .text-h4::before{
+        width: 100%;
+    }
+    .about .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .about p{
+        font-size: 15px;
+    }
+}

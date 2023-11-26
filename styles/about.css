@@ -1,0 +1,64 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #eeeeee;
+    padding: 0 5%;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+    min-height: 800px;
+}
+
+
+.about-img .frame{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    border: 3px solid var(--red);
+    transform: translateX(-20px) translateY(20px);
+    z-index: 2;
+}
+
+.about-img img{
+    width: 400px;
+    height: 500px;
+    z-index: 1;
+}
+
+.about-text {
+    max-width: 37rem;
+}
+
+.about-text .text-h4 {
+    position: relative;
+    font-size: 1rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.about-text .text-h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 50px;
+    height: .2rem;
+    background: var(--red);
+}
+
+.about-text .text-h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 4rem;
+}

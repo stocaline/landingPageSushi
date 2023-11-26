@@ -1,0 +1,33 @@
+.home {
+    display: flex;
+    max-width: 1920px;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    gap: 4rem;
+}
+
+.home-text {
+    max-width: 37rem;
+}
+
+.home-text .text-h4 {
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.home-text .text-h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.home-text p {
+    margin-bottom: 4rem;
+}
+
+.home-img img {
+    max-width: 90%;
+}

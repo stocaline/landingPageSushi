@@ -1,0 +1,74 @@
+.navigation{
+    position: fixed;
+    display: flex;
+    background: var(--bg-color);
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    transition: all 0.5s ease-in-out;
+    z-index: 999;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand .Name{
+    color: var(--dark);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.brand .logo{
+    width: 20%;
+}
+
+.Name span {
+    color: var(--red);
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation ul li a {
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+    color: var(--red);
+}
+
+.navigation ul li:nth-child(3) a {
+    color: var(--bg-color);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.navigation ul li:nth-child(3) a:hover {
+    color: var(--bg-color);
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
